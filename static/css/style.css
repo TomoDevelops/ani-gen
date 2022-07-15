@@ -1,0 +1,122 @@
+*,
+html {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+
+  background-image: url(../assets/anime-bg-3951.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.my-logo {
+  width: 100px;
+}
+
+.my-logo img {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.my-form,
+.my-container {
+  max-width: 750px;
+  padding: 50px;
+  margin: 7% 2% 10% 2%;
+  /* Glassmorphism BG */
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.my-container {
+  text-align: center;
+}
+
+.img-wrapper {
+  max-width: 400px;
+  margin-inline: auto;
+}
+
+.anime-image {
+  width: 100%;
+}
+
+.anime-title {
+  font-size: clamp(1.5rem, 1.2816rem + 0.932vw, 2.4rem);
+  margin-top: 25px;
+}
+
+.anime-desc {
+  margin-top: 25px;
+  max-width: 500px;
+  font-size: clamp(1.2rem, 1.10288rem + 0.41424vw, 1.6rem);
+  margin-inline: auto;
+  text-align: left;
+}
+
+.my-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.my-links a {
+  font-size: clamp(1.2rem, 1.10288rem + 0.41424vw, 1.6rem);
+}
+
+.my-label,
+.my-radio,
+.my-radio-label,
+#anime_category,
+#anime_category option,
+#my-ranking-select,
+#my-ranking-select option {
+  font-size: 1.6rem;
+}
+
+.my-btn {
+  font-size: clamp(1.2rem, 1.10288rem + 0.41424vw, 1.6rem);
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  text-shadow: 0.5px 0.5px 5px #000;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .my-form,
+  .my-container {
+    padding: 25px;
+  }
+
+  .my-links {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+}
