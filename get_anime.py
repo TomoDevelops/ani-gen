@@ -43,5 +43,6 @@ for num in range(len(all_genre)):
                 desc_text = desc.text.strip()
                 new_entry['desc'] = desc_text
             data.append(new_entry)
-    with open(f"../data/{all_genre[num]['title'].replace('/','')}.json", 'w', encoding="utf-8") as file:
+    with open(f"./data/{all_genre[num]['title'].replace('/','')}.json", 'w', encoding="utf-8") as file:
         json.dump(data, file, indent=2, ensure_ascii=False)
+    print(f"Completed: {all_genre[num]['title'].replace('/','')}.json")
