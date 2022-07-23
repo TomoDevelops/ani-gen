@@ -1,6 +1,6 @@
 *,
 html {
-  /* font-family: "Noto Sans JP", sans-serif; */
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 62.5%;
   scroll-behavior: smooth;
   box-sizing: border-box;
