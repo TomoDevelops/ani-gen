@@ -3,9 +3,11 @@ from bs4 import BeautifulSoup
 import requests
 import json
 from random import choice, randint
+from flask_mobility import Mobility
 
 app = Flask(__name__)
 app.jinja_env.globals.update(zip=zip)
+Mobility(app)
 
 # App Functions
 
@@ -56,7 +58,7 @@ def home():
     return render_template('index.html', all_genre=all_genre)
 
 
-@app.route('/results', methods=["POST"])
+@app.route('/results', methods=["Get", "POST"])
 def results():
     if request.method == "POST":
         genre = request.form['genre']
