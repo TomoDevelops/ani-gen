@@ -11,6 +11,7 @@ clipboard==0.0.4
 colorama==0.4.5
 cryptography==37.0.4
 Flask==2.1.2
+Flask-Mobility==1.1.0
 Flask-SQLAlchemy==2.5.1
 Flask-WTF==1.0.1
 future==0.18.2
