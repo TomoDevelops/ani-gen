@@ -1,7 +1,7 @@
   {% include 'header.html'%}
 
-    <main>
-      <form class="container-fluid my-form" action="{{url_for('results')}}" method="POST">
+    <main class="container">
+      <form class="row my-form" action="{{url_for('results')}}" method="POST">
         <label for="anime_category" class="form-label mb-3 my-label"
           >アニメのカテゴリ</label
         >
@@ -59,10 +59,12 @@
         </button>
       </form>
       {% if request.MOBILE: %}
-      <a href="https://t.afi-b.com/visit.php?guid=ON&a=W6892w-g232138b&p=c8631632" rel="nofollow noopener" target="_blank" class="my-unext-mobile-ad">
-        <img src="https://www.afi-b.com/upload_image/6892-1422246792-3.gif" width="320" height="50" style="border:none;" alt="U-NEXT" />
-      </a>
-      <img src="https://t.afi-b.com/lead/W6892w/c8631632/g232138b" width="1" height="1" style="border:none;" />
+      <div class="row mb-3 my-unext-mobile-ad">
+        <a href="https://t.afi-b.com/visit.php?guid=ON&a=W6892w-g232138b&p=c8631632" rel="nofollow noopener" target="_blank" class="my-unext-mobile-ad">
+          <img src="https://www.afi-b.com/upload_image/6892-1422246792-3.gif" width="320" height="50" style="border:none;" alt="U-NEXT" />
+        </a>
+        <img src="https://t.afi-b.com/lead/W6892w/c8631632/g232138b" width="1" height="1" style="border:none;" />
+      </div>
       {% endif %}
     </main>
 

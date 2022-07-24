@@ -34,12 +34,15 @@ nav {
 main {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .my-form,
 .my-container {
   max-width: 750px;
-  padding: 50px;
+  padding: 25px;
   margin: 7% 2% 10% 2%;
   /* Glassmorphism BG */
   background: rgba(255, 255, 255, 0.5);
@@ -122,7 +125,5 @@ main {
 }
 
 .my-unext-mobile-ad {
-  position: absolute;
-  bottom: 7%;
-  margin-inline: auto;
+  text-align: center;
 }
